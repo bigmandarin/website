@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+  <title>Big Mandarin</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width">
+  <style>
+  body * {
+    box-sizing: borderbox;
+    font-family: "helvetica neue", "sans serif";
+  }
+  body {
+    margin: 0;
+  }
+  h1, h2, .punchline {
+    font-family: "Open Sans", "sans serif";
+  }
+  .logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    background-color: black;
+  }
+  @media only screen and (min-width: 640px) {
+    .logo {
+      font-size: 50px;
+    }
+  }
+  .logo .big {
+    color: yellow;
+  }
+  .logo .mandarin {
+    color: orange;
+  }
+  section {
+    padding: 1em; 
+  }
+  
+  .hero {
+    text-align: center;
+    font-size: 120%;
+    color: white;
+    background: url(background.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .hero h1 {
+    font-size: 1.2em;
+    font-weight: normal;
+  }
+  .hero .punchline {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  @media only screen and (min-width: 640px) {
+    .hero {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+    .profile {
+      float: left;
+      max-width: 250px;
+      margin-right: 20px;
+    }
+    .center-box {
+      margin: 0 auto;
+      width: 540px
+    }
+    .contact {
+      margin-bottom: 2em;
+    }
+    .hero h1 {
+      font-size: 150%;
+    }
+    .hero .punchline {
+      font-size: 200%;
+    }
+  }
+  .center-box h1,
+  .center-box h2 {
+    text-align: center;
+  }
+  .avatar {
+    float: left;
+    margin: 20px 20px 0px 0;
+    border: 1px solid black;
+  }
+  .who, .hero {
+    background-color: #a6c65d;
+  }
+  .who {
+    text-shadow: 1px 1px 0px #cbde6b;
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+  a {
+    color: orange;
+  }
+  a:hover {
+    background-color: black;
+  }
+  .email {
+
+  }
+  </style>
+</head>
+<body>
+  <div class="logo"><span class="big">Big</span><span class="mandarin">Mandarin</span></div>
+  <section class="hero">
+    <div class="center-box">
+      <h1>Have a great idea for a startup but don't have the techical skills to implement it?</h1>
+      <p class="punchline">We can make it a reality.</p>
+    </div>
+  </section>
+  <section class="how">
+    <div class="center-box">
+      <h2>How It Works</h2>
+      <p>You have a business idea you want to test out. We will build an minimal viable product (MVP) in as little as two weeks for the price of $5000.
+      </p>
+      <p>Our process involves:</p>
+      <ol>
+        <li>An initial meeting where we understand the business concept and the scope of the MVP.</li>
+        <li>A second meeting there we will mockup the screens that need to be built together, to ensure that we are on the same page, and ambiguities we come across will be resolved early.</li>
+        <li>We start building, giving you a deployed and demoable app at the end of each day of work.</li>
+        <li>At the end of the 2-week build process, we are done, and you own the product and code we produced.</li>
+      </ol>
+    </div>
+  </section>
+  <section class="who">
+    <div class="center-box">
+      <h2>Who We Are</h2>
+      <div class="profile">
+        <img class="avatar" src="toby.png" width="100" height="100">
+        <h3>Toby Ho</h3>
+        <p>Toby is a JavaScript nerd. He loves writing software, tinkering, contributing to open source, and helping others learn.
+      </div>
+      <div class="profile">
+        <img class="avatar" src="wendy.png" width="100" height="100">
+        <h3>Wendy Yang</h3>
+        <p>Wendy has been writing software for over 10 years. Ruby on Rails is her tool of choice. She loves it when her work makes life easier for others.</p>
+      </div>
+    </div>
+    <div style="clear: left"></div>
+  </section>
+  <section class="contact">
+    <div class="center-box">
+      <h2>Contact Us</h2>
+      <p>Want to work with us? Email us at <a class="email" href="mailto:hello@bigmandarin.com">hello@bigmandarin.com</a>.</p>
+    </div>
+  </section>
+</body>
+</html>
