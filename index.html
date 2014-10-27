@@ -3,6 +3,7 @@
 <head>
   <title>Big Mandarin</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./font-awesome-4.2.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width">
   <style>
   body * {
@@ -14,6 +15,15 @@
   }
   h1, h2, .punchline {
     font-family: "Open Sans", "sans serif";
+  }
+  ol {
+    list-style: none;
+    color: #292e31;
+    font-family: 'Whitney SSm A','Whitney SSm B',Helvetica,Arial;
+    font-weight: 300;
+    font-style: normal;
+    font-size:18px;
+    padding: 0;
   }
   .logo {
     font-weight: bold;
@@ -35,7 +45,6 @@
   section {
     padding: 1em; 
   }
-  
   .hero {
     text-align: center;
     font-size: 120%;
@@ -54,6 +63,10 @@
     font-size: 1.5em;
     font-weight: bold;
   }
+
+  .arrow {
+    display: none;
+  }
   
   @media only screen and (min-width: 640px) {
     .hero {
@@ -62,12 +75,12 @@
     }
     .profile {
       float: left;
-      max-width: 250px;
-      margin-right: 20px;
+      max-width: 320px;
+      margin-right: 50px;
     }
     .center-box {
       margin: 0 auto;
-      width: 540px
+      width: 740px
     }
     .contact {
       margin-bottom: 2em;
@@ -78,6 +91,7 @@
     .hero .punchline {
       font-size: 200%;
     }
+
   }
   .center-box h1,
   .center-box h2 {
@@ -88,7 +102,7 @@
     margin: 20px 20px 0px 0;
     border: 1px solid black;
   }
-  .who, .hero {
+  .who {
     background-color: #a6c65d;
   }
   .who {
@@ -106,6 +120,25 @@
   .email {
 
   }
+  .listitem {
+    border: solid 1px rgba(49,78,95,0.12);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    display:inline-block;
+  }
+  .iconitem {
+    display:block;
+    text-align:center;
+  }
+  @media only screen and (min-width: 640px) {
+    .listitem {
+      width: 40%;
+    }
+    .listitem.odd {
+      margin-right: 50px;
+    }
+  }
   </style>
 </head>
 <body>
@@ -122,12 +155,20 @@
       <p>You have a business idea you want to test out. We will build an minimal viable product (MVP) in as little as two weeks for the price of $5000.
       </p>
       <p>Our process involves:</p>
-      <ol>
-        <li>An initial meeting where we listen and  understand the business concept and the scope of the MVP.</li>
-        <li>A second meeting where we will mockup the screens that need to be built together, to ensure that we are on the same page, and to resolve ambiguities we come across early.</li>
-        <li>We start building, giving you a deployed and demoable app at the end of each day of work.</li>
-        <li>At the end of the 2-week build process, we are done, and you own the product and code we produced.</li>
-      </ol>
+      <div>
+        <div class="listitem odd">
+          <i class="fa fa-gear fa-2x iconitem" style="display:block; text-align:center"></i>
+          An initial meeting where we understand the business concept and the scope of the MVP.</div>
+        
+        <div class="listitem even"><i class="fa fa-comments fa-2x iconitem"></i>At second meeting we mockup the screens and ensure that ambiguities will be resolved early.</div>
+        
+        <div class="listitem odd"><i class="fa fa-laptop fa-2x iconitem"></i>We start building, giving you a deployed and demoable app at the end of each day of work.</div>
+
+        <div class="listitem even">
+          <i class="fa fa-angellist fa-2x iconitem"></i>At the end of the 2-week build process, we are done, and you own the product and code.
+        </div>
+
+      </div>
     </div>
   </section>
   <section class="who">
